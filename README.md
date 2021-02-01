@@ -1,18 +1,20 @@
 Introduction
+
 This is the AWS Roles and IAM test
 The tasks have been broken down into Modules for reusability
 
 For ease of operation using CICD Pipeline, a MakeFile using bash is attached
 
-Pre-requisite
-1. Replace variable account_id with the targeted account
-2. make sure that your aws credentials are set up
-
 Assumption
 It is assumed that a secret_string with the name testkey is stored in the secret manager to be used 
 as external id 
 
+Pre-requisite
+1. Replace variable account_id with the targeted account
+2. make sure that your aws credentials are set up
+
 Procedure
+
 There are two ways the IAC code could be run to simulate real life scenario
 1. you can run 'make create-all' assuming there are no infrastructures at all ( the user groups are not yet created)
 2. you can run the IAC in order
